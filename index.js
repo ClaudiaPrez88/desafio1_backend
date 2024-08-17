@@ -4,10 +4,10 @@ const { registrar, leer } = require('./operaciones');
 const [operacion, nombre, edad, animal, color, enfermedad] = process.argv.slice(2);
 
 if (operacion === 'registrar') {
-    // Llamar función registrarCita con los argumentos proporcionados
+    // Llamar función registrar con los argumentos proporcionados
     registrar(nombre, edad, animal, color, enfermedad);
 } else if (operacion === 'leer') {
-    // Llamar función leerCitas
+    // Llamar función leer
     leer();
 } else {
     console.log('Operación no reconocida. Usa "registrar" o "leer".');
